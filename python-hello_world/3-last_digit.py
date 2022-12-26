@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 import random
-n = random.randint(-10000, 10000)
-m = n % 10
-if (m > 5):
-    print("FLast digit of {} is".format(n),m,"and is greater than 5")
-elif(m == 0):
-    print("First 3 letters {} is".format(n),m,"and is 0")
+number = random.randint(-10000, 10000)
+last = number % 10
+if number < 0:
+    last =last - 10
+if last == 0:
+    print("Last digit of {} is".format(number),last,"and is 0")
 else:
-    print("First 3 letters {} is".format(n),m,"and is less than 6 and not 0")
+    if last > 5:
+        print("Last digit of {} is".format(number),last,"and is greater than 5")
+    else:
+        print("Last digit of {} is".format(number),last,"and is less than 6 and not 0")
 
 
