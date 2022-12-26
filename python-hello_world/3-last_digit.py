@@ -9,7 +9,7 @@ if last == 0:
 else:
     if last > 5:
         print(
-              "Last digit of {} is".format(number), 
+              "Last digit of {} is".format(number),
               last,
               "and is greater than 5")
     else:
